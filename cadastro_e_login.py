@@ -4,8 +4,12 @@ from tkinter import messagebox
 import sqlite3
 import re
 
-#Função para criar a tabela de usuários no banco de dados SQLite
+# obs .. pra adicionar as imagem e icon tem quer esta na msm pasta 
+# caso contrario as imagem e icon nao vai aparece baixa o arquivo 
+# copactado e assim todo os dados vai esta na msm pasta pra roda com imagem e icon
 
+
+#Função para criar a tabela de usuários no banco de dados SQLite
 def criar_tabela_usuarios():
     conn = sqlite3.connect("usuarios.db")
     cursor = conn.cursor()
@@ -20,7 +24,6 @@ def criar_tabela_usuarios():
     conn.close()
 
 #Função para inserir um novo usuário no banco de dados
-
 def inserir_usuario(nome, sobrenome, email, senha):
     conn = sqlite3.connect("usuarios.db")
     cursor = conn.cursor()
