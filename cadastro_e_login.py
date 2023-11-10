@@ -273,13 +273,21 @@ janela.geometry("1000x390")
 janela.title("Bem-vindo ao Orkut")
 janela.resizable(False, False)
 
-#  icon 
-janela.iconbitmap("icon.ico")
 
-# imagem da tela 
-img= PhotoImage (file = "orkut.png")
-Label_img = ctk.CTkLabel(master=janela, image= img, text=" ")
-Label_img.place(x=-3,y=2)
+
+
+# obs .. pra adicionar as imagem e icon tem quer esta na msm pasta 
+# caso contrario as imagem e icon nao vai aparece 
+
+  # icon 
+
+#janela.iconbitmap("icon.ico")
+
+  # imagem da tela 
+
+#img= PhotoImage (file = "orkut.png")
+#Label_img = ctk.CTkLabel(master=janela, image= img, text=" ")
+#Label_img.place(x=-3,y=2)
 
 login_frame = ctk.CTkFrame(master=janela, width=350, height=390)
 login_frame.pack(side=RIGHT)
